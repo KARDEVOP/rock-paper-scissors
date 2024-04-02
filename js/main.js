@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function()
 
     choiceButton1.addEventListener('click', function() 
     { 
-        playerSelection = 'Rock'; 
+        playerSelection = 'rock'; 
         playGame();
         resultStatus1.textContent = playerScore;
         resultStatus2.textContent = computerScore;
