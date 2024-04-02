@@ -2,24 +2,119 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Page Title</title>
+  <title>Rock-Paper-Scissors!</title>
+  <style>
+    body {
+      background-color: #2d2d2d;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+    .image-rectangle {
+      width: 350px;
+      height: 300px; /* Updated height to match the image */
+      background-image: url('images/rps.png');
+      background-size: cover;
+      margin: 0 auto;
+    }
+
+    .choiceButton1, .choiceButton2, .choiceButton3 {
+      display: visible; /* Initially invisible, can be changed to visible per JS request */
+      text-align: center;
+      margin-top: 30px;
+      position: absolute;
+      transform: translateX(-50%);
+    }
+    .choiceButton1 {
+      left: 30%;
+    }
+    .choiceButton2 {
+      left: 50%;
+    }
+    .choiceButton3 {
+      left: 70%;
+    }
+    .statusText {
+      text-align: center;
+      margin-top: 20px;
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .playerText {
+      top: 500px; /* Adjusted to position lower than the buttons */
+      left: 50%;
+    }
+    .computerText {
+      top: 530px; /* Adjusted to position lower than the player status */
+    }
+    .playerStatus {
+      top: 500px; /* Adjusted to position lower than the buttons */
+      left: 80%;
+    }
+    .computerStatus {
+      top: 530px; /* Adjusted to position lower than the player status */
+      left: 80%;
+    }
+    .status1 {
+      top: 410px; /* Adjusted to position lower than the buttons */
+    }
+    .resultText1 {
+      top: 560px; /* Adjusted to position lower than the computer status */
+      left: 50%;
+    }
+    .resultStatus1 {
+      top: 560px; /* Adjusted to position lower than the computer status */
+      left: 80%;
+    }
+    .resultText2 {
+      top: 590px; /* Adjusted to position lower than the result status 1 */
+      left: 50%;
+    }
+    .resultStatus2 {
+      top: 590px; /* Adjusted to position lower than the result status 1 */
+      left: 80%;
+    }
+    .tryAgain {
+      display: none; /* Initially invisible, can be changed to visible per JS request */
+      text-align: center;
+      margin-top: 100px;
+      position: absolute;
+      transform: translateX(-50%);
+      left: 50%;
+    }
+
+  </style>
 </head>
 <body>
-    
-  <script src="main.js" ref="js"></script>
+  <h1>Rock-Paper-Scissors!</h1>
+  <div class="image-rectangle"></div>
+    <button class="choiceButton1">Rock</button>
+    <button class="choiceButton2">Paper</button>
+    <button class="choiceButton3">Scissor</button>
+    <button class="tryAgain">Try Again</button>
+    <div class="statusText status1">Choose</div>
+    <div class="statusText playerText">Player's Choice: </div>
+    <div class="statusText computerText">Computer's Choice: </div>
+    <div class="statusText playerStatus">test</div>
+    <div class="statusText computerStatus">test</div>
+    <div class="statusText resultText1">You</div>
+    <div class="statusText resultStatus1">0</div>
+    <div class="statusText resultText2">Bot</div>
+    <div class="statusText resultStatus2">0</div>
+  <script src="js/main.js" ref="js"></script>
+  
 </body>
+
+
 </html>
-<style>
-  body {
-    background-color: #2d2d2d;
-    color: white;
-    font-family: Arial, sans-serif;
-  }
-</style>
-<style>
-  body {
-    font-weight: bold;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-  }
-</style>
+
+
+
+
+
+
